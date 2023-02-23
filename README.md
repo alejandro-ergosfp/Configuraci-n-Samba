@@ -1,11 +1,36 @@
 # Configuracion-Samba
 En este repositorio se mostraran los pasos para crear un recurso samba y compartirlo con una maquina Debian
 
-# Kubernetes  - PODs
+# 1- Instalación de Samba
 
-## Step-01: PODs Introduction
-- What is a POD ?
-- What is a Multi-Container POD?
+```
+sudo apt -y install samba
+Verificamos que el servicio este correcto
+
+sudo systemctl status smbd.service
+```
+
+2- Configurando Samba
+Una vez instalado el servidor Samba, es hora de configurarlo. El archivo de configuración de samba es smb.conf y se encuentra en el directorio /etc/samba. En este archivo, especificamos la carpeta y las impresoras que queremos compartir junto con sus permisos y parámetros. Pero antes de hacer nada te recomiendo un backup del archivo
+
+sudo cp /etc/samba/smb.conf ~/Documentos/smb.conf_backup
+Ahora si lo editamos
+
+sudo nano /etc/samba/smb.conf
+Vamos a agregar al final del archivo lo siguiente
+
+[samba-share]
+comment = Samba en Debian
+path = /samba
+read-only = no
+browsable = yes
+Explicación
+
+[samba-share] = nombre del recurso compartido de samba
+comment = breve descripción de la acción
+path= Ruta del directorio compartido.
+read-only = Establecer directorio compartido como lectura
+browsable = para incluir el recurso compartido en la lista de recursos compartidos o no.
 
 ## Step-02: PODs Demo
 ### Get Worker Nodes Status
