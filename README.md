@@ -74,6 +74,6 @@ sudo apt install smbclient
 
 [![Image from Gyazo](https://i.gyazo.com/c2c47bc60c7a8b724275ce218add204d.png)](https://gyazo.com/c2c47bc60c7a8b724275ce218add204d)
 
-- Luego escribimos el usuario que creamos anteiormente y su contraseña asociada
+- Luego escribimos el usuario que configuramos anteriormente y su contraseña asociada
 
 
