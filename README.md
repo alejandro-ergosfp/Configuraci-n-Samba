@@ -44,7 +44,7 @@ browsable = para incluir el recurso compartido en la lista de recursos compartid
 ## 3 Configuración de la cuenta de usuario
 - Ahora necesitaremos la cuenta de usuario de configuración para samba. El usuario de Samba debe ser el usuario del sistema y, por lo tanto, debe existir en el archivo /etc/passwd. En mi caso el usuario es "domin"
 ```
-#Utilizando el comando tail /etc/passwd podemos ver el nombre de nuestro usuario
+# Utilizando el comando tail /etc/passwd podemos ver el nombre de nuestro usuario
 tail /etc/passwd
 ```
 [![Image from Gyazo](https://i.gyazo.com/0447fb80bb347ec752bd5f1a5eb9b9a8.png)](https://gyazo.com/0447fb80bb347ec752bd5f1a5eb9b9a8)
