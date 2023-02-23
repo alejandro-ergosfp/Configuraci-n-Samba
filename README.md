@@ -62,12 +62,7 @@ sudo smbpasswd -a domin (Nombre del usuario para acceder al curso)
 sudo systemctl restart smbd
 ```
 
-## 5 Usando la línea de comando
-- Para conectar el recurso compartido de samba desde la línea de comandos de Linux, deberá instalar el cliente de Samba. Ayudará a conectar los recursos compartidos de samba desde la línea de comandos.
-
-```
-sudo apt install smbclient
-````
+## 5 Usando el explorardor de archivos
 
 - Para poder acceder al recurso deberemos entrar en Lugares -> Otras Ubicaciones
 - Escribimos la siguiente ruta **smb://dirección_ip/Nombre_del_recurso**
