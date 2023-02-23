@@ -70,7 +70,7 @@ sudo apt install smbclient
 ````
 
 - Para poder acceder al recurso deberemos entrar en Lugares -> Otras Ubicaciones
-- Escribimos la siguiente ruta smb://dirección_ip/Nombre_del_recurso
+- Escribimos la siguiente ruta **smb://dirección_ip/Nombre_del_recurso**
 
 [![Image from Gyazo](https://i.gyazo.com/c2c47bc60c7a8b724275ce218add204d.png)](https://gyazo.com/c2c47bc60c7a8b724275ce218add204d)
 
